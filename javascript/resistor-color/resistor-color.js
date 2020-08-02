@@ -3,16 +3,16 @@
 // convenience to get you started writing code faster.
 //
 
-export const colorCode = (i) => {
+export const colorCode = (input) => {
   const resistorColors = ["black", "brown", "red", "orange", "yellow", "green", "blue", "violet", "grey", "white"]
-  let userInput = i.toLowerCase()
+  let userInput = input.toLowerCase()
   let result
 
   for (let i = 0; i < resistorColors.length; i++) {
-    const colorCodeOutput = resistorColors[i];
     
-    if (colorCodeOutput === userInput) {
+    if (resistorColors[i] === userInput) {
       result = i
+      break
     }
 
     else{
