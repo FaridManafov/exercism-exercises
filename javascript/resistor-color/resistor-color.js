@@ -4,19 +4,18 @@
 //
 
 export const colorCode = (input) => {
-  const resistorColors = ["black", "brown", "red", "orange", "yellow", "green", "blue", "violet", "grey", "white"]
   let userInput = input.toLowerCase()
   let result
 
-  for (let i = 0; i < resistorColors.length; i++) {
+  for (let i = 0; i < COLORS.length; i++) {
     
-    if (resistorColors[i] === userInput) {
+    if (COLORS[i] === userInput) {
       result = i
       break
     }
 
     else{
-      result = resistorColors
+      result = COLORS
     }
 
   }
@@ -24,4 +23,4 @@ export const colorCode = (input) => {
   return result
 };
 
-export const COLORS = undefined;
+export const COLORS = ["black", "brown", "red", "orange", "yellow", "green", "blue", "violet", "grey", "white"];
